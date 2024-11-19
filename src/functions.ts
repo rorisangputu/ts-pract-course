@@ -40,9 +40,18 @@ console.log(studentName);
 
 
 //Optional AND Default Parameters in FUNCTIOns
+
+//Optional Paramaters
 function calculatePrice(price: number, discount?: number):number {
     return price - (discount || 0); //adding fallback value incase because discount value is optional
 }
 
 let priceAfterDiscount = calculatePrice(100);
 console.log(priceAfterDiscount);
+
+//Default Parameters                            //penaltyPoints has default value 
+function calculateScore(initialScore: number, penaltyPoints: number = 0): number { 
+    return initialScore - penaltyPoints;
+}
+let scoreAfterPenalty = calculateScore(100, 20);
+let scoreWithoutPenalty = calculateScore(300);
