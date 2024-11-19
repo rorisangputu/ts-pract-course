@@ -39,4 +39,4 @@ let studentName:boolean = checkNames('Mike')
 console.log(studentName);
 
 
-//Optional AND Default Parameters in FUNCTIOs
+//Optional AND Default Parameters in FUNCTIOns
