@@ -40,3 +40,8 @@ console.log(studentName);
 
 
 //Optional AND Default Parameters in FUNCTIOns
+function calculatePrice(price: number, discount?: number):number {
+    return price - discount;
+}
+
+let priceAfterDiscount = calculatePrice(100, 20);
