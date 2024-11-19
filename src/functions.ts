@@ -41,7 +41,8 @@ console.log(studentName);
 
 //Optional AND Default Parameters in FUNCTIOns
 function calculatePrice(price: number, discount?: number):number {
-    return price - discount;
+    return price - (discount || 0); //adding fallback value incase because discount value is optional
 }
 
-let priceAfterDiscount = calculatePrice(100, 20);
+let priceAfterDiscount = calculatePrice(100);
+console.log(priceAfterDiscount);
